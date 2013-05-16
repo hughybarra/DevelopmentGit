@@ -1,0 +1,228 @@
+/* Resets ================================ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	text-transform: none;
+	font-family: "Helvetica Neua", Sans-Serif, Arial;
+	color: #e3f2f1;	
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Resets ================================ */
+
+/* MAIN 		 ================================ */
+
+html {
+	background-image: url("images/batthern.png");
+	background-repeat: repeat;
+}
+body {
+	display: block;
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+    background-color: #0a5163; 
+
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0a5163), to(#0e819e));
+    background-image: -webkit-linear-gradient(top, #0a5163, #0e819e); 
+    background-image:    -moz-linear-gradient(top, #0a5163, #0e819e);
+    background-image:     -ms-linear-gradient(top, #0a5163, #0e819e);
+    background-image:      -o-linear-gradient(top, #0a5163, #0e819e);
+
+
+}
+
+/* Header 		 ================================ */
+
+header {
+	margin-top: 25px;
+	height: 50px;
+
+	background-color: #8e482c; 
+
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#09333d), to(#0d4f5f));
+    background-image: -webkit-linear-gradient(top, #09333d, #0d4f5f); 
+    background-image:    -moz-linear-gradient(top, #09333d, #0d4f5f);
+    background-image:     -ms-linear-gradient(top, #09333d, #0d4f5f);
+    background-image:      -o-linear-gradient(top, #09333d, #0d4f5f);
+}
+
+header h3 {
+	float: left;
+	clear: left;
+	margin-left: 50px;
+	text-align: center;
+	width: 150px;
+}
+header h1 a {
+	font-size: 25px;
+	line-height: 50px;
+	padding-left:50px;
+	width: 100px;
+	float: left;
+	text-align: center;
+	text-decoration: none;
+}
+nav {
+	float: left;
+	width: 810px;
+}
+nav ul {
+	float: right;
+	margin-right: 10px;
+}
+nav ul li {
+	float: left;
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	padding-left: 10px;
+}
+nav ul li a{
+	display:block;
+
+}
+/* Sections		 ================================ */
+#sectionImage{
+	width: 200px;
+	float:left;
+	margin-top: 10px;
+	overflow: hidden;
+}
+#sectionImage img{
+	margin-left:50px;
+}
+#sectionImage h3{
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 25px;
+	width: 200px;
+	text-align: center;
+}
+#sectionOne h2{
+	color: #afc1c6;
+	width: 600px;
+	height: 50px;
+	font-size: 25px;
+	line-height: 50px;
+	float: left;
+	text-align: center;
+	text-decoration: none;
+
+	background-color: #0f313a; 
+
+  	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0f313a), to(#20525e));
+    background-image: -webkit-linear-gradient(top, #0f313a, #20525e); 
+    background-image:    -moz-linear-gradient(top, #0f313a, #20525e);
+    background-image:     -ms-linear-gradient(top, #0f313a, #20525e);
+    background-image:      -o-linear-gradient(top, #0f313a, #20525e);
+}
+#sectionOne {
+	margin: 10px 10px 50px 0 ;
+	width: 600px;
+	float: right;
+	clear: right;
+}
+#flash_object {
+	margin: 0 auto;
+	width: 600px;
+	height: 400px;
+}
+
+
+#sectionThree{
+	width: 600px;
+	height: 100px;
+	float: right;
+	margin: 10px 10px 0 0;
+
+}
+#sectionThree h3{
+	font-size: 25px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+}
+#sectionThree p{
+	font-size: 15px;
+	padding-left: 10px;
+}
+
+footer{
+	width: 960px;
+	display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
