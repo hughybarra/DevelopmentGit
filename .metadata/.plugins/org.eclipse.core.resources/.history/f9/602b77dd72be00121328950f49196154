@@ -1,0 +1,18 @@
+package com.wbarra.screens
+{
+	import com.wbarra.imagesAndSound.AllMyImages;
+	
+	import starling.display.Image;
+	import starling.display.Sprite;
+	
+	public class GameOver extends Sprite
+	{
+		private var _horse:Image;
+	
+		public function GameOver()
+		{
+			super();
+			_horse = Image.fromBitmap(AllMyImages.UNICORN();
+		}
+	}
+}

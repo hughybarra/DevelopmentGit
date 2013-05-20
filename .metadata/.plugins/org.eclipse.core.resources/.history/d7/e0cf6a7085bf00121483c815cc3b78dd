@@ -1,0 +1,64 @@
+package com.wbarra.game.objects
+{
+	import com.wbarra.imagesAndSound.AllMyImages;
+	
+	import starling.display.Image;
+	import starling.display.Sprite;
+	
+	public class Turret extends Sprite
+	{
+		
+		private var _bullet:Bullet;
+		private var __alive:Boolean = true;
+		private var _bulletArray:Array = [];
+		private var _bulletCounter:uint = 0;
+		
+		
+		public function Turret()
+		{
+			super();
+			var turret:Image = Image.fromBitmap(new AllMyImages.SHIP_IMAGE());
+			turret.x = 225 ;
+			turret.y = 680;
+			addChild( turret);
+			var turretGun:Image = Image.fromBitmap(new AllMyImages.SHIP_SHOOT());
+			turretGun.x = 225;
+			turretGun.y = 675;
+			addChild( turretGun);
+			
+			for (var j:int = 0; j < 100; j++) 
+			{
+				var bullet:Bullet = new Bullet();
+				_bulletArray.push( bullet );
+			}  
+		}
+
+		public function get _alive():Boolean
+		{
+			return __alive;
+		}
+
+		public function set _alive(value:Boolean):void
+		{
+			__alive = value;
+		}
+		
+		public function turretShoot(target:Ship):void
+		{
+			_bulletArray[_bulletCounter].x = 225;
+			_bulletArray[_bulletCounter].y = 680;
+			_bulletArray[_bulletCounter]._bulletTarget = target;
+			_bulletArray[_bulletCounter]._alive = true;
+			_bulletCounter ++;
+			parent.addChild((_bulletArray[_bulletCounter]);
+			
+			if (_bulletCounter == 0)
+			{
+				_bulletCounter = 0;
+			}
+			
+		}
+
+
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;LearningSterling/src/com/wbarra/imagesAndSound/images/zombieUnicorn..png&apos; to &apos;zombieUnicorn.png&apos;" description="Rename resource &apos;zombieUnicorn..png&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/wbarra/imagesAndSound/images/zombieUnicorn..png" name="zombieUnicorn.png" stamp="1368687635457" updateReferences="true"/>
+</session>

@@ -1,0 +1,120 @@
+package com.wbarra.game.objects
+{
+	import com.wbarra.imagesAndSound.AllMyImages;
+	
+	import starling.display.Image;
+	import starling.display.Sprite;
+	
+	public class Bullet extends Sprite
+	{
+		
+		private var _bulletAlive:Boolean = false;
+		private var _positionX:Number;
+		private var _positionY:Number;
+		private var _bulletSpeed:Number = 3;
+		private var _bTarget:Ship;
+		private var _changeX:Number;
+		private var _changeY:Number;
+		private var _angle:Number;
+		private var _rads:Number;
+		private var _bDistanceX:Number;
+		private var __distanceY:Number;
+		private var __testNumber:Number;
+		
+		public function Bullet(alive:Boolean = false, posX:Number = 0, posY:Number = 0)
+		{
+			super();
+			
+			var bullet:Image = Image.fromBitmap(new AllMyImages.BULLET()); 
+			_bulletAlive = alive;
+			_positionX  = posX;
+			_positionY  = posY;
+			
+			addChild(bullet);
+		}
+		
+		
+		//GETTERS AND SETTERS 
+		///////////////////////////////
+		///////////////////////////////
+
+		public function get _distanceX():Number
+		{
+			return _bDistanceX;
+		}
+
+		public function get _distanceY():Number
+		{
+			return __distanceY;
+		}
+		
+		public function set _posY(value:Number):void
+		{
+			_positionY = value;
+		}
+
+		public function set _posX(value:Number):void
+		{
+			_positionX = value;
+		}
+
+		public function set _bulletTarget(value:Ship):void
+		{
+			_bTarget = value;
+		}
+		public function get _bulletTarget():Ship{
+			return _bTarget;
+		}
+
+		public function set _alive(value:Boolean):void
+		{
+			_bulletAlive = value;
+		}
+		public function get _alive():Boolean
+		{
+			return _bulletAlive;
+		}
+		///////////////////////////////
+		///////////////////////////////
+
+		public function bulletTargetingSysetm():void
+		{
+		
+			if (_bulletAlive == true)
+			{
+				_changeX  = _bTarget._newX - x;
+				_changeY  = _bTarget._newY -y;
+				_angle    = Math.atan2(_changeY, _changeX) * (180/ Math.PI) ;
+				_rads     = _angle * Math.PI /180;
+				
+				x += Math.cos(_rads) * _bulletSpeed;
+				y += Math.sin(_rads) * _bulletSpeed;
+				
+				//setting distance to be a positive number 
+				_bDistanceX = x - _bTarget.x;
+				__distanceY = y - _bTarget.y;
+				
+				if (_bDistanceX < 0)
+				{
+					_bDistanceX *= -1;
+				}
+				if(__distanceY < 0)
+				{
+					__distanceY *= -1;
+				}
+				
+				if (!_bTarget._alive)
+				{
+					//bullets disipate 
+					alpha -= .05;
+				}
+			}
+			
+		}
+		public function bulletDeath():void
+		{
+			//remove myself from stage
+			_bulletAlive = false;
+		}
+	}
+}

@@ -1,5 +1,6 @@
 package com.wbarra.controller
 {
+	import com.wbarra.events.ScreenEvent;
 	import com.wbarra.game.objects.Bullet;
 	import com.wbarra.game.objects.Ship;
 	import com.wbarra.game.objects.Turret;
@@ -7,9 +8,9 @@ package com.wbarra.controller
 	import com.wbarra.imagesAndSound.AllMySounds;
 	import com.wbarra.managers.ShipDistanceCalculator;
 	import com.wbarra.screens.GameStage;
-	import com.wbarra.screens.GameStart;
 	
 	import flash.media.Sound;
+	import flash.media.SoundChannel;
 	
 	import starling.core.Starling;
 	import starling.display.Sprite;
@@ -38,23 +39,21 @@ package com.wbarra.controller
 		private var __shoot:Sound = new AllMySounds.SHOT;
 		private var __explosion:Sound = new AllMySounds.POP;
 		private var __ps:PDParticleSystem;
-		
+		private var _gameAlive:Boolean = true;
+		private var _bgMusic:Sound;
+		private var _mySoundChannel:SoundChannel;
 		public function Game()
 		{
 			super();
 			
-//			addEventListener(Event.ADDED_TO_STAGE, gameStart);
-//			addEventListener(Event.ADDED_TO_STAGE, setStage);
-//			addEventListener(Event.ADDED_TO_STAGE, gameMode);
+			addEventListener(Event.ADDED_TO_STAGE, setStage);
+			addEventListener(Event.ADDED_TO_STAGE, gameMode);
+		
 		}
+		
 		
 		private function gameStart():void
 		{
-			trace("ran");
-			var startScreen:GameStart = new GameStart();
-			
-			
-			addChild(startScreen);
 			
 		}
 		
@@ -65,10 +64,9 @@ package com.wbarra.controller
 			__battleField = new Sprite(); 
 			addChild( __battleField );
 			
-			var tempID:uint = 0;
 			for (var i:int = 0; i < __numberOfShips; i++) 
 			{
-				var ship:Ship =  new Ship(true, tempID);
+				var ship:Ship =  new Ship(true);
 				__battleField.addChild( ship );
 				__currentQuestions.push(ship._question);
 				__answersArray.push(ship._answer);
@@ -123,26 +121,25 @@ package com.wbarra.controller
 
 			if (e.keyCode == 32 || e.keyCode == 13) // spacebar
 			{
-				
 				var answerCheck:Boolean = false;
-				
-				
 				for each (var s:Ship in __shipArray) 
 				{
 						
 						if (Number(__userAnswer) == s._answer)
 						{
 							trace("correct");
+							__turret._firing = true;
 							if (s._alive)
 							{
 								// adding the current bullet to the stage 
-								__bulletArray[__bulletCounter].x = 200;
-								__bulletArray[__bulletCounter].y = 600;
+								__bulletArray[__bulletCounter].x = 240;
+								__bulletArray[__bulletCounter].y = 690;
 								__bulletArray[__bulletCounter]._bulletTarget = s;
 								__bulletArray[__bulletCounter]._alive = true;
 								__battleField.addChild( __bulletArray[__bulletCounter] );
 								__bulletCounter ++;
 								__shoot.play();
+								__turret._rads = s._rads;
 							}
 							
 							if (__bulletCounter > 100)// look into fixing this 
@@ -164,6 +161,7 @@ package com.wbarra.controller
 		}		
 		private function onEnterFrame():void
 		{
+			__turret.firing();
 			__gameStage._score   = __totalScore;
 			// ship for each loop. Tracking allships
 			for each (var s:Ship in __shipArray) 
@@ -188,25 +186,17 @@ package com.wbarra.controller
 									s.x -= 1;
 									ship2.x += 1;
 								}
-								// Sean is breaking stuff
-								
-								if(s.y > ship2.y){
-									s._speed *= 1.1;
-								}else{
-									ship2._speed *= 1.1;
-								}
 							}
 						}
 					}
 				if(s._alive)
 				{
 					s.shipMove();
-					
 					__distanceY = __turret.y - s.y;
 					__distanceX = __turret.x - s.x;
-					
 					if (__distanceY <= 5 && __distanceX <= 5)
 					{
+						trace("game resseting for some reasaon");
 						__totalScore = 0;
 						__numberOfShips = 1;
 						
@@ -230,16 +220,16 @@ package com.wbarra.controller
 							b.bulletDeath();
 						}
 						
-						if (__distanceY <= 0)
+						if (s.y >= 670)
 						{
-							targetHit;( b );
+							_gameAlive = false;
+							gameOver();
 						}
 					}// end for each loop 
 				}
 			}// end for each loop 
-			if (__shipArray.length == __score)
+			if (__shipArray.length == __score && _gameAlive)
 			{
-				trace("ran");
 				__score = 0;
 				__gameStage._waveNumber += 1;
 				resetGame();
@@ -273,6 +263,7 @@ package com.wbarra.controller
 		}
 		private function resetGame():void
 		{
+			trace("game reset");
 			__answersArray      = [];
 			__bulletArray 		= [];
 			__currentQuestions 	= [];
@@ -285,6 +276,22 @@ package com.wbarra.controller
 			removeEventListener(KeyboardEvent.KEY_DOWN, onKeyDown);
 			__numberOfShips++;
 			gameMode();
+		}
+		private function gameOver():void
+		{
+			__gameStage.stopMusic();	
+			__answersArray      = [];
+			__bulletArray 		= [];
+			__currentQuestions 	= [];
+			__shipArray 		= [];
+			while( __battleField.numChildren > 0)
+			{
+				__battleField.removeChildAt(0);
+			}
+			removeChild(__gameStage);
+			__battleField.removeEventListener(Event.ENTER_FRAME, onEnterFrame);
+			removeEventListener(KeyboardEvent.KEY_DOWN, onKeyDown);
+			dispatchEvent(new ScreenEvent(ScreenEvent.CHANGE_SCREEN, "run game"));	
 		}
 	}
 }

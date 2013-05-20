@@ -1,12 +1,17 @@
 package 
 {
-	import com.wbarra.controller.Game;
+	import com.wbarra.controller.ScreenNavigator;
 	
 	import flash.display.Sprite;
+	import flash.events.ContextMenuEvent;
+	import flash.net.URLRequest;
+	import flash.net.navigateToURL;
+	import flash.ui.ContextMenu;
+	import flash.ui.ContextMenuItem;
 	
 	import starling.core.Starling;
 	
-	[SWF(width="1024", height="768", frameRate="60", backgroundColor="#000000")]
+	[SWF(width="512", height="768", frameRate="60", backgroundColor="#000000")]
 	
 	public class tempProj extends Sprite
 	{
@@ -16,23 +21,31 @@ package
 		
 		public function tempProj()
 		{
-//			// These settings are recommended to avoid problems with touch handling
-//			stage.scaleMode = StageScaleMode.NO_SCALE;
-//			stage.align = StageAlign.TOP_LEFT;
-//			
-//			// Create a Starling instance that will run the "Game" class
-//			mStarling = new Starling(Game, stage);
-//			mStarling.start();
+			
+			var my_menu:ContextMenu = new ContextMenu();
+			my_menu.hideBuiltInItems();
 			
 			
-			mStarling = new Starling(Game, stage);
+			var developerNotice:ContextMenuItem = new ContextMenuItem("Developed and Designed by Hugh Ybarra");
+			developerNotice.enabled = false;
+			my_menu.customItems.push(developerNotice);
+			
+			var siteNotice:ContextMenuItem = new ContextMenuItem("http://www.wbarra.com");
+			my_menu.customItems.push(siteNotice);
+			
+			function openLink(e:ContextMenuEvent):void
+			{
+				navigateToURL(new URLRequest("http://www.wbarra.com"));
+			}
+			siteNotice.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT, openLink);
+			
+			var copyNotice:ContextMenuItem = new ContextMenuItem("Copyright - 2013");
+			copyNotice.enabled = false;
+			my_menu.customItems.push(copyNotice);
+			contextMenu = my_menu;
+			
+			mStarling = new Starling(ScreenNavigator, stage);
 			mStarling.start();
-			
-//			_mStarling = new Starling(ball, stage);
-//			_mStarling.start();
-			
-			
-			
 		}
 	}
 }

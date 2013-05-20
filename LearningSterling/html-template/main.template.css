@@ -51,178 +51,69 @@ table {
 /* MAIN 		 ================================ */
 
 html {
-	background-image: url("images/batthern.png");
+	background-color: #474545;
 	background-repeat: repeat;
 }
-body {
-	display: block;
-	width: 960px;
-	margin: 0 auto;
-	overflow: hidden;
-    background-color: #0a5163; 
-
-    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0a5163), to(#0e819e));
-    background-image: -webkit-linear-gradient(top, #0a5163, #0e819e); 
-    background-image:    -moz-linear-gradient(top, #0a5163, #0e819e);
-    background-image:     -ms-linear-gradient(top, #0a5163, #0e819e);
-    background-image:      -o-linear-gradient(top, #0a5163, #0e819e);
-
+body{
+	background-color: #242729;
+	width: 990px;
+	margin: 25px auto;
 
 }
-
-/* Header 		 ================================ */
-
-header {
-	margin-top: 25px;
+header{
+	background-color: #000000 ;
+	margin: 50px, auto;
+	width: 990px;
 	height: 50px;
-
-	background-color: #8e482c; 
-
-    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#09333d), to(#0d4f5f));
-    background-image: -webkit-linear-gradient(top, #09333d, #0d4f5f); 
-    background-image:    -moz-linear-gradient(top, #09333d, #0d4f5f);
-    background-image:     -ms-linear-gradient(top, #09333d, #0d4f5f);
-    background-image:      -o-linear-gradient(top, #09333d, #0d4f5f);
-}
-
-header h3 {
-	float: left;
-	clear: left;
-	margin-left: 50px;
 	text-align: center;
-	width: 150px;
-}
-header h1 a {
-	font-size: 25px;
+	font-size: 40px;
+	font-family: "Helvetica Neue";
 	line-height: 50px;
-	padding-left:50px;
-	width: 100px;
-	float: left;
-	text-align: center;
-	text-decoration: none;
+	color: #00baff;
 }
-nav {
-	float: left;
-	width: 810px;
-}
-nav ul {
-	float: right;
-	margin-right: 10px;
-}
-nav ul li {
-	float: left;
-	width: 100px;
-	height: 50px;
-	line-height: 50px;
-	text-align: center;
-	padding-left: 10px;
-}
-nav ul li a{
-	display:block;
 
-}
-/* Sections		 ================================ */
-#sectionImage{
-	width: 200px;
+
+.leftSide{
 	float:left;
-	margin-top: 10px;
-	overflow: hidden;
+	margin-left: 20px;
+	width:418px;
 }
-#sectionImage img{
-	margin-left:50px;
-}
-#sectionImage h3{
-	height: 50px;
-	line-height: 50px;
-	text-align: center;
+.leftSide h2{
+	font-family: "Helvetica Neue";
 	font-size: 25px;
-	width: 200px;
-	text-align: center;
+	margin-top: 50px;
+	color: #00baff;
 }
-#sectionOne h2{
-	color: #afc1c6;
-	width: 600px;
-	height: 50px;
-	font-size: 25px;
-	line-height: 50px;
-	float: left;
-	text-align: center;
-	text-decoration: none;
-
-	background-color: #0f313a; 
-
-  	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0f313a), to(#20525e));
-    background-image: -webkit-linear-gradient(top, #0f313a, #20525e); 
-    background-image:    -moz-linear-gradient(top, #0f313a, #20525e);
-    background-image:     -ms-linear-gradient(top, #0f313a, #20525e);
-    background-image:      -o-linear-gradient(top, #0f313a, #20525e);
-}
-#sectionOne {
-	margin: 10px 10px 50px 0 ;
-	width: 600px;
-	float: right;
-	clear: right;
-}
-#flash_object {
-	margin: 0 auto;
-	width: 600px;
-	height: 400px;
-}
-
-
-#sectionThree{
-	width: 600px;
-	height: 100px;
-	float: right;
-	margin: 10px 10px 0 0;
-
-}
-#sectionThree h3{
-	font-size: 25px;
-	height: 30px;
-	line-height: 30px;
-	padding-left: 10px;
-}
-#sectionThree p{
+.leftSide p{
+	font-family: "helvetica Neue";
 	font-size: 15px;
-	padding-left: 10px;
+	margin-top: 10px;
+	padding-right: 10px;
 }
-
+#flashSection{
+	margin-right: 20px;
+	margin-left: 50px;
+	width: 522px;
+	float: left;
+	height: 778px;
+	margin: 25px auto;
+	background-color: #FFFFFF;
+}
+#test{
+	width: 512px;
+	height: 768px;
+	padding-top: 5px;
+	padding-left: 5px;
+}
 footer{
-	width: 960px;
-	display: inline-block;
+	font-family: "helvetica neue";
+	font-size: 40px;
+	line-height: 50px;
+	height: 50px;
+	color: #FFFFFF;
+	text-align: center;
+	clear: both;
+	width: 990px;
+	background-color: #000000;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	

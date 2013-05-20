@@ -1,0 +1,75 @@
+package com.wbarra.screens
+{
+	import com.wbarra.events.ScreenEvent;
+	import com.wbarra.imagesAndSound.AllMyImages;
+	import com.wbarra.imagesAndSound.AllMyParticles;
+	
+	import starling.core.Starling;
+	import starling.display.Image;
+	import starling.display.Sprite;
+	import starling.events.Event;
+	import starling.events.Touch;
+	import starling.events.TouchEvent;
+	import starling.events.TouchPhase;
+	import starling.extensions.PDParticleSystem;
+	import starling.textures.Texture;
+	
+	public class GameStart extends Sprite
+	{
+		private var _startButton:Image;
+		private var _starlingLogo:Image;
+		private var _squareLogo:Image;
+		private var _ps:PDParticleSystem;
+		
+		
+		public function GameStart()
+		{
+			super();
+			this.addEventListener(Event.ADDED_TO_STAGE, runStart);
+		}
+		
+		private function runStart():void
+		{
+			var psConfig:XML = XML(new  AllMyParticles.CLOUD_CONFIG() );
+			var psTexture:Texture = Texture.fromBitmap(new AllMyParticles.CLOUD());
+			
+			_ps = new PDParticleSystem(psConfig, psTexture);	
+			_ps.x = 256;
+			_ps.y = 384;
+			addChild( _ps);
+			Starling.juggler.add( _ps);
+			_ps.emitterX = 0;
+			_ps.emitterY = 0;
+			_ps.start(300.0);
+			
+			_startButton= Image.fromBitmap(new AllMyImages.STARTBUTTON());
+			_startButton.x = 256 - _startButton.width/2;
+			_startButton.y = 384 - _startButton.height/2;
+			addChild( _startButton );
+			
+			_starlingLogo= Image.fromBitmap( new AllMyImages.LOGO_STARLING());
+			_starlingLogo.x = 25;
+			_starlingLogo.y = 575;
+			addChild( _starlingLogo );
+			_squareLogo = Image.fromBitmap( new AllMyImages.LOGO_71_SQRD());
+			_squareLogo.x = -125;
+			_squareLogo.y = 25;
+			addChild( _squareLogo );
+			_startButton.addEventListener(TouchEvent.TOUCH, onTouch);
+		}
+		private function onTouch(event:TouchEvent):void
+		{
+			var touch:Touch = event.getTouch(this, TouchPhase.BEGAN)
+			if (touch)
+			{
+				dispatchEvent(new ScreenEvent(ScreenEvent.CHANGE_SCREEN, "game screen"));	
+				removeEventListener(TouchEvent.TOUCH, onTouch);
+				removeChild(_squareLogo);
+				removeChild(_starlingLogo);
+				removeChild(_startButton);
+			}
+			
+		}
+	
+	}
+}

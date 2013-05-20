@@ -4,6 +4,7 @@ package com.wbarra.screens
 	import com.wbarra.imagesAndSound.AllMySounds;
 	
 	import flash.media.Sound;
+	import flash.media.SoundChannel;
 	
 	import starling.core.Starling;
 	import starling.display.Sprite;
@@ -21,6 +22,8 @@ package com.wbarra.screens
 		private var __ps:PDParticleSystem;
 		private var __waveUpdate:TextField;
 		private var __waveNumber:uint;
+		private var _mySoundChannel:SoundChannel;
+		private var _bgMusic:Sound;
 		
 		public function GameStage()
 		{
@@ -28,8 +31,9 @@ package com.wbarra.screens
 			
 			// LOADING BACKGROUND MUSIC 
 			//-------------------------
-			var bgMusic:Sound = new AllMySounds.BG_MUSIC();
-			bgMusic.play();
+			_mySoundChannel = new SoundChannel();
+			_bgMusic = new AllMySounds.BG_MUSIC();
+			_mySoundChannel = _bgMusic.play(); // <----------------------------------MUSIC ON AND OFF 	
 			// LOADING BACKGROUND MUSIC 
 			//-------------------------
 			
@@ -126,6 +130,10 @@ package com.wbarra.screens
 		{
 			__scoreBoard.text = String(__score);
 			__waveUpdate.text = String(__waveNumber);
+		}
+		public function stopMusic():void
+		{
+			_mySoundChannel.stop();
 		}
 
 	}

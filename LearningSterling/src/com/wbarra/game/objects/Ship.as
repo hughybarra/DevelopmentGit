@@ -21,7 +21,7 @@ package com.wbarra.game.objects
 		private var __shipID:uint;
 		private var __enemyEquation:TextField;
 		
-		public function Ship(alive:Boolean,__shipID)
+		public function Ship(alive:Boolean)
 		{
 			super();
 			__alive = alive;
@@ -44,6 +44,16 @@ package com.wbarra.game.objects
 		// GETTERS AND SETTERS 
 		//////////////////////////////////
 		//////////////////////////////////
+
+		public function get _rads():Number
+		{
+			return __rads;
+		}
+
+		public function set _rads(value:Number):void
+		{
+			__rads = value;
+		}
 
 		public function get _speed():Number
 		{

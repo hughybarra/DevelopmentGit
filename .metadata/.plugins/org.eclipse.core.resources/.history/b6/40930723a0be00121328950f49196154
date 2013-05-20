@@ -1,0 +1,35 @@
+package com.wbarra.controller
+{
+	import com.wbarra.screens.GameOver;
+	import com.wbarra.screens.GameStart;
+	import com.wbarra.utilityBuilder.ScreenEvent;
+	
+	import feathers.controls.ScreenNavigator;
+	
+	import starling.display.Sprite;
+	import starling.extensions.PDParticleSystem;
+	
+	public class Game extends Sprite
+	{
+		private var __score:uint = 0;
+		
+		private var __ps:PDParticleSystem;
+		private var _gameOver:GameOver;
+		private var _screenNum:String = "start screen";
+		private var _navigator:ScreenNavigator;
+		private var _startScreen:GameStart;
+		
+		public function Game()
+		{
+			super();
+			_startScreen = new GameStart();
+			addChild(_startScreen);
+			_startScreen.addEventListener(ScreenEvent.CHANGE_SCREEN, onChangeScreen);
+		}
+		private function onChangeScreen(event:ScreenEvent):void
+		{
+			removeChild(_startScreen);
+			
+		}
+	}
+}

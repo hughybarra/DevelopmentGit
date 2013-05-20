@@ -1,0 +1,102 @@
+package com.wbarra.game.objects
+{
+	import com.wbarra.utilityBuilder.QuestionBuilder;
+	
+	import starling.display.Sprite;
+	import starling.text.TextField;
+	
+	public class Ship extends Sprite
+	{
+		
+		private var _builtQuestion:String = "";
+		private var _shipAlive:Boolean;
+		private var _shipAnswer:Number;
+		private var _newShipX:Number;		
+		private var __newY:Number;
+		private var __changeX:Number;
+		private var __changeY:Number;
+		private var __angle:Number;
+		private var __rads:Number;
+		private var __speed:Number = 1;
+		private var __shipID:uint;
+		private var __enemyEquation:TextField;
+		
+		public function Ship(alive:Boolean)
+		{
+			super();
+			_shipAlive = alive;
+			
+			x = Math.random()*480;
+			y = -10 + (Math.random()*-50);
+			__enemyEquation = new TextField(100, 50, "1 + 1:");
+			__enemyEquation.color = 0xFFFFFF;
+			__enemyEquation.x = -50;
+			__enemyEquation.y = -25;
+			addChild(__enemyEquation);
+			buildQuestions();
+		}
+
+		public function get _speed():Number
+		{
+			return __speed;
+		}
+		public function set _speed(value:Number):void
+		{
+			__speed = value;
+		}
+		public function set _alive(value:Boolean):void
+		{
+			_shipAlive = value;
+		}
+		public function get _alive():Boolean
+		{
+			return _shipAlive;
+		}
+		public function get _newY():Number
+		{
+			return __newY;
+		}
+		public function get _newX():Number
+		{
+			return _newShipX;
+		}
+		public function get _answer():int
+		{
+			return _shipAnswer;
+		}
+		public function get _question():String
+		{
+			return _builtQuestion;
+		}
+		public function buildQuestions():void
+		{
+			var questionBuilder:QuestionBuilder = new QuestionBuilder();
+			questionBuilder.buildMyQuestion();
+			_shipAnswer = questionBuilder._myAnswer;
+			__enemyEquation.text = questionBuilder._myQuestion;
+		}		
+		public function shipMove():void
+		{
+			if (_shipAlive)
+			{
+				__changeX = 210 -x;
+				__changeY = 680 - y;
+				__angle = Math.atan2(__changeY, __changeX) * ( 180/ Math.PI);
+				__rads = __angle * Math.PI/ 180;
+				x += Math.cos(__rads) * __speed;
+				y += Math.sin(__rads) * __speed;
+				_newShipX = x;
+				__newY = y;
+			}
+			else
+			{
+				__speed = 0;
+			}
+			
+		}
+		public function shipDeath():void
+		{
+			_shipAlive = false;			
+		}
+	}
+}

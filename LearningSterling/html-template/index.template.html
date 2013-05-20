@@ -1,19 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"> 
+<!DOCTYPE html>
+<html lang="en-us"/>
     <head>
       
         <title>${title}</title>
         <meta name="google" value="notranslate" />         
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-      
-        <style type="text/css" media="screen"> 
+      	<link rel="stylesheet" href="main.css"/>
+    <!-- 
+    <style type="text/css" media="screen"> 
             html, body  { height:100%; }
             body { margin:0; padding:0; overflow:auto; text-align:center; 
                    background-color: ${bgcolor}; }   
             object:focus { outline:none; }
             #flashContent { display:none; }
         </style>
+ -->
         
       
             
@@ -45,46 +46,45 @@
     </head>
 
     <body>
+        <header>
+        		<h1> Individual Project By Hugh Ybarra </h1>
+        </header>
+        
       
-        <div id="flashContent">
-            <p>
-                To view this page ensure that Adobe Flash Player version 
-                ${version_major}.${version_minor}.${version_revision} or greater is installed. 
-            </p>
-            <script type="text/javascript"> 
-                var pageHost = ((document.location.protocol == "https:") ? "https://" : "http://"); 
-                document.write("<a href='http://www.adobe.com/go/getflashplayer'><img src='" 
-                                + pageHost + "www.adobe.com/images/shared/download_buttons/get_flash_player.gif' alt='Get Adobe Flash player' /></a>" ); 
-            </script> 
+        
+        <section>
+
+            <div class="leftSide">
+              <h2>ABOUT THE PROJECT</h2>
+              <p>
+                  For the indivudal project I decided to build a turret defense style video game. The game is very simple. The user is a space ship traveling along in space shooting down Evil math equations that are trying to ram it. When an equation comes onto the screen, you the user only have to type in the proper answer and watch as a missile flies towards it and blows it up. Its actually a lot of fun. I had tons of fun developing this game. 
+              </p>
+              <h2>THE TECHNOLOGTY</h2>
+              <p>
+                The objective for this assignment was to creata a simple video game using three different apis. The Apis I chose for this game were all sort of bundled into the same api. Starling is a cool extension to Flash that allows the application to be rendered through your GPU instead of your CPU. This greatly buffs performance. For the other two apis I used Starling's Feathers which is an extension of extensions. The package included a ton of neat features including the particle effects system I used 
+              </p>
+            </div>
+            <div id="flashSection">
+                <div id="test">
+                <div id="flashContent">
+                		<p>
+                    			  	To view this page ensure that Adobe Flash Player version 
+                      			${version_major}.${version_minor}.${version_revision} or greater is installed. 
+                  			</p>
+                  	<script type="text/javascript"> 
+                      	var pageHost = ((document.location.protocol == "https:") ? "https://" : "http://"); 
+                      	document.write("<a href='http://www.adobe.com/go/getflashplayer'><img src='" 
+                        	              + pageHost + "www.adobe.com/images/shared/download_buttons/get_flash_player.gif' alt='Get Adobe Flash player' /></a>" ); 
+              	   </script> 
+                </div>
+            </div>
         </div>
         
-        <noscript>
-            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="${width}" height="${height}" id="${application}">
-                <param name="movie" value="${swf}.swf" />
-                <param name="quality" value="high" />
-                <param name="bgcolor" value="${bgcolor}" />
-                <param name="allowScriptAccess" value="sameDomain" />
-                <param name="allowFullScreen" value="true" />
-                <!--[if !IE]>-->
-                <object type="application/x-shockwave-flash" data="${swf}.swf" width="${width}" height="${height}">
-                    <param name="quality" value="high" />
-                    <param name="bgcolor" value="${bgcolor}" />
-                    <param name="allowScriptAccess" value="sameDomain" />
-                    <param name="allowFullScreen" value="true" />
-                <!--<![endif]-->
-                <!--[if gte IE 6]>-->
-                    <p> 
-                        Either scripts and active content are not permitted to run or Adobe Flash Player version
-                        ${version_major}.${version_minor}.${version_revision} or greater is not installed.
-                    </p>
-                <!--<![endif]-->
-                    <a href="http://www.adobe.com/go/getflashplayer">
-                        <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash Player" />
-                    </a>
-                <!--[if !IE]>-->
-                </object>
-                <!--<![endif]-->
-            </object>
-        </noscript>     
+        
+        </section>
+        
+        <footer>
+          <h2>Full Sail University</h2>
+        </footer>    
    </body>
 </html>
