@@ -1,0 +1,12 @@
+package com.wbarra.controller
+{
+	import starling.display.Sprite;
+	
+	public class GameController extends Sprite
+	{
+		public function GameController()
+		{
+			super();
+		}
+	}
+}

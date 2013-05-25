@@ -1,0 +1,21 @@
+package
+{
+	import com.wbarra.controller.GameController;
+	
+	import flash.display.Sprite;
+	
+	import starling.core.Starling;
+	
+	
+	public class GroupProject extends Sprite
+	{
+		
+		private var _starling:Starling;
+		public function GroupProject()
+		{
+			_starling = new Starling(GameController, stage);
+			_starling.start();
+			
+		}
+	}
+}

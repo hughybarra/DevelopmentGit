@@ -1,0 +1,13 @@
+package com.wbarra.Game
+{
+	import starling.display.Sprite;
+	
+	public class Screen extends Sprite
+	{
+		public function Screen()
+		{
+			super();
+			var textField:TextField = new TextField(400, 300, "Welcome to Starling!");
+		}
+	}
+}

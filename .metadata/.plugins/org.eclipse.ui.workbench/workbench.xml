@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="58" version="2.0">
+<workbench progressCount="42" version="2.0">
 <workbenchAdvisor/>
 <window height="878" width="1356" x="68" y="22">
 <fastViewData fastViewLocation="1024"/>
@@ -11,64 +11,29 @@
 <coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="136" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="158" y="22"/>
-<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="62" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="84" y="22"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="32" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="152" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.browser.editor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
 <page aggregateWorkingSetId="Aggregate for window 1368674845976" focus="true" label="Workspace - Flash">
 <editors>
-<editorArea activeWorkbook="org.eclipse.ui.internal.EditorStack@165e96e">
-<info part="org.eclipse.ui.internal.EditorStack@165e96e">
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
-<part id="6"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="tempProj.as" partName="tempProj.as" path="/Users/Hugh/Documents/DevelopmentGit/LearningSterling/src/tempProj.as" title="tempProj.as" tooltip="LearningSterling/src/tempProj.as" workbook="org.eclipse.ui.internal.EditorStack@165e96e">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LearningSterling/src/tempProj.as"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="363" selectionTopPixel="0"/>
-</editor>
-<editor focus="true" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Game.as" partName="Game.as" path="/Users/Hugh/Documents/DevelopmentGit/LearningSterling/src/com/wbarra/controller/Game.as" title="Game.as" tooltip="LearningSterling/src/com/wbarra/controller/Game.as" workbook="org.eclipse.ui.internal.EditorStack@165e96e">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LearningSterling/src/com/wbarra/controller/Game.as"/>
-<editorState selectionHorizontalPixel="0" selectionLength="104" selectionOffset="667" selectionTopPixel="0"/>
-</editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="GameStage.as" partName="GameStage.as" path="/Users/Hugh/Documents/DevelopmentGit/LearningSterling/src/com/wbarra/screens/GameStage.as" title="GameStage.as" tooltip="LearningSterling/src/com/wbarra/screens/GameStage.as" workbook="org.eclipse.ui.internal.EditorStack@165e96e">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LearningSterling/src/com/wbarra/screens/GameStage.as"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3716" selectionTopPixel="1380"/>
-</editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Ship.as" partName="Ship.as" path="/Users/Hugh/Documents/DevelopmentGit/LearningSterling/src/com/wbarra/game/objects/Ship.as" title="Ship.as" tooltip="LearningSterling/src/com/wbarra/game/objects/Ship.as" workbook="org.eclipse.ui.internal.EditorStack@165e96e">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LearningSterling/src/com/wbarra/game/objects/Ship.as"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1505" selectionTopPixel="720"/>
-</editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Turret.as" partName="Turret.as" path="/Users/Hugh/Documents/DevelopmentGit/LearningSterling/src/com/wbarra/game/objects/Turret.as" title="Turret.as" tooltip="LearningSterling/src/com/wbarra/game/objects/Turret.as" workbook="org.eclipse.ui.internal.EditorStack@165e96e">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LearningSterling/src/com/wbarra/game/objects/Turret.as"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1492" selectionTopPixel="435"/>
-</editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Bullet.as" partName="Bullet.as" path="/Users/Hugh/Documents/DevelopmentGit/LearningSterling/src/com/wbarra/game/objects/Bullet.as" title="Bullet.as" tooltip="LearningSterling/src/com/wbarra/game/objects/Bullet.as" workbook="org.eclipse.ui.internal.EditorStack@165e96e">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LearningSterling/src/com/wbarra/game/objects/Bullet.as"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="658" selectionTopPixel="1021"/>
-</editor>
-<editor id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="QuestionBuilder.as" partName="QuestionBuilder.as" path="/Users/Hugh/Documents/DevelopmentGit/LearningSterling/src/com/wbarra/utilityBuilder/QuestionBuilder.as" title="QuestionBuilder.as" tooltip="LearningSterling/src/com/wbarra/utilityBuilder/QuestionBuilder.as" workbook="org.eclipse.ui.internal.EditorStack@165e96e">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LearningSterling/src/com/wbarra/utilityBuilder/QuestionBuilder.as"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1301" selectionTopPixel="291"/>
-</editor>
 </editors>
 <views>
 <view id="org.eclipse.debug.ui.ExpressionView" partName="Expressions"/>
@@ -93,19 +58,11 @@
 </view>
 <view id="com.adobe.flexbuilder.packageexplorer" partName="Package Explorer">
 <viewState LINK_NAVIGATOR_TO_EDITOR="0" fpeIsFlat="0" fpeSortBy="1" sorter="1">
-<fpeExpanded>&#x0A;<fpeElement fpePath="/LearningSterling"/>
-<fpeElement fpePath="/LearningSterling/src"/>
-<fpeElement fpePath="/LearningSterling/src/%typeDefaultPackage"/>
-<fpeElement fpePath="/LearningSterling/src/com"/>
-<fpeElement fpePath="/LearningSterling/src/com/wbarra"/>
-<fpeElement fpePath="/LearningSterling/src/com/wbarra/game"/>
-<fpeElement fpePath="/LearningSterling/src/com/wbarra/game/objects"/>
-<fpeElement fpePath="/LearningSterling/src/com/wbarra/utilityBuidler"/>
-<fpeElement fpePath="/LearningSterling/src/com/wbarra/utilityBuilder"/>
-</fpeExpanded>
-<fpeSelection>&#x0A;<fpeElement fpePath="/LearningSterling/src/com/wbarra/utilityBuilder/QuestionBuilder.as"/>
+<fpeSelection>
+<fpeElement fpePath="/Library_OF_Hugo"/>
 </fpeSelection>
-<filters>&#x0A;<filter element=".flexProperties" isEnabled="true"/>
+<filters>
+<filter element=".flexProperties" isEnabled="true"/>
 <filter element=".actionScriptProperties" isEnabled="true"/>
 <filter element=".project" isEnabled="true"/>
 <filter element=".settings" isEnabled="true"/>
@@ -124,9 +81,8 @@
 <filter element="*.class" isEnabled="false"/>
 <filter element=".*" isEnabled="false"/>
 </filters>
-<expanded>&#x0A;<element path="/LearningSterling"/>
-</expanded>
-<selection>&#x0A;<element path="/LearningSterling/src/com/wbarra/utilityBuilder/QuestionBuilder.as"/>
+<selection>
+<element path="/Library_OF_Hugo"/>
 </selection>
 </viewState>
 </view>
@@ -176,9 +132,8 @@
 <alwaysOnActionSet id="com.adobe.flexbuilder.dcrad.actionSet"/>
 <alwaysOnActionSet id="com.adobe.flexbuilder.zzz.editors.common.ui.project.publish"/>
 <alwaysOnActionSet id="com.adobe.flexbuilder.exportimport.actionSet1"/>
-<alwaysOnActionSet id="com.adobe.flexbuilder.editorcore.modeswitch"/>
-<alwaysOnActionSet id="com.adobe.flexbuilder.designview.activationcontrol"/>
 <alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.egit.ui.navigation"/>
 <alwaysOnActionSet id="com.adobe.flexbuilder.as.editor.ui.NavigationActions"/>
 <show_view_action id="com.adobe.flexbuilder.packageexplorer"/>
 <show_view_action id="org.eclipse.ui.views.ContentOutline"/>
@@ -212,6 +167,7 @@
 <perspective_action id="com.adobe.flash.profiler.ui.ProfilingPerspective"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="com.adobe.flexbuilder.packageexplorer"/>
 <fastViewBars>
 <fastViewBar fastViewLocation="1024" id="bottomLayout" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="1">
 <fastViews>
@@ -224,17 +180,19 @@
 <view id="org.eclipse.debug.ui.DebugView" ratio="0.2987887"/>
 </fastViews>
 </fastViewBar>
-<fastViewBar fastViewLocation="16384" id="org.eclipse.ui.internal.ViewStack@1fb03cb" orientation="512" selectedTabId="com.adobe.flexbuilder.packageexplorer" style="1">
-<fastViews>
-<view id="com.adobe.flexbuilder.packageexplorer" ratio="0.22768533"/>
-</fastViews>
-</fastViewBar>
 </fastViewBars>
 <layout>
 <mainWindow>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1fb03cb">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@139f51a">
+<folder activePageID="com.adobe.flexbuilder.packageexplorer" appearance="2" expanded="2">
+<page content="com.adobe.flexbuilder.packageexplorer" label="Package Explorer"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1fb03cb" ratio="0.25" ratioLeft="337" ratioRight="1011" relationship="2" relative="org.eclipse.ui.internal.ViewStack@139f51a">
 <folder appearance="2" expanded="2">
-<page content="com.adobe.flexbuilder.packageexplorer" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
@@ -386,176 +344,12 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/LearningSterling/src/com/wbarra/screens/GameStage.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/LearningSterling/src/com/wbarra/game/objects/Ship.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/LearningSterling/src/com/wbarra/game/objects/Turret.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/LearningSterling/src/com/wbarra/controller/Game.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/LearningSterling/src/com/wbarra/game/objects/Bullet.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/LearningSterling/src/com/wbarra/utilityBuilder/QuestionBuilder.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/LearningSterling/src/tempProj.as"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" path="/LearningSterling/src/com/wbarra/controller/Game.as"/>
-</editors>
-<item historyLabel="Ship.as" index="1">
-<position info="not_deleted" x="2090" y="0"/>
-</item>
-<item historyLabel="GameStage.as" index="0">
-<position info="not_deleted" x="8640" y="0"/>
-</item>
-<item historyLabel="Ship.as" index="1">
-<position info="not_deleted" x="2081" y="0"/>
-</item>
-<item historyLabel="GameStage.as" index="0">
-<position info="not_deleted" x="9498" y="0"/>
-</item>
-<item historyLabel="Ship.as" index="1">
-<position info="not_deleted" x="2081" y="0"/>
-</item>
-<item historyLabel="Turret.as" index="2">
-<position info="not_deleted" x="1778" y="0"/>
-</item>
-<item historyLabel="GameStage.as" index="0">
-<position info="not_deleted" x="3461" y="0"/>
-</item>
-<item historyLabel="Ship.as" index="1">
-<position info="not_deleted" x="2030" y="0"/>
-</item>
-<item historyLabel="GameStage.as" index="0">
-<position info="not_deleted" x="3393" y="0"/>
-</item>
-<item historyLabel="Ship.as" index="1">
-<position info="not_deleted" x="2030" y="0"/>
-</item>
-<item historyLabel="GameStage.as" index="0">
-<position info="not_deleted" x="3445" y="0"/>
-</item>
-<item historyLabel="Ship.as" index="1">
-<position info="not_deleted" x="2030" y="0"/>
-</item>
-<item historyLabel="Turret.as" index="2">
-<position info="not_deleted" x="1778" y="0"/>
-</item>
-<item historyLabel="Bullet.as" index="4">
-<position info="not_deleted" x="658" y="0"/>
-</item>
-<item historyLabel="Game.as" index="3">
-<position info="not_deleted" x="29" y="0"/>
-</item>
-<item historyLabel="GameStage.as" index="0">
-<position info="not_deleted" x="7329" y="0"/>
-</item>
-<item historyLabel="Ship.as" index="1">
-<position info="not_deleted" x="2030" y="0"/>
-</item>
-<item historyLabel="Game.as" index="3">
-<position info="not_deleted" x="29" y="0"/>
-</item>
-<item historyLabel="GameStage.as" index="0">
-<position info="not_deleted" x="7329" y="0"/>
-</item>
-<item historyLabel="Ship.as" index="1">
-<position info="not_deleted" x="904" y="18"/>
-</item>
-<item historyLabel="Turret.as" index="2">
-<position info="not_deleted" x="1778" y="0"/>
-</item>
-<item historyLabel="GameStage.as" index="0">
-<position info="not_deleted" x="8164" y="0"/>
-</item>
-<item historyLabel="Ship.as" index="1">
-<position info="not_deleted" x="1558" y="0"/>
-</item>
-<item historyLabel="Turret.as" index="2">
-<position info="not_deleted" x="1492" y="0"/>
-</item>
-<item historyLabel="GameStage.as" index="0">
-<position info="not_deleted" x="8164" y="0"/>
-</item>
-<item historyLabel="Turret.as" index="2">
-<position info="not_deleted" x="1492" y="0"/>
-</item>
-<item historyLabel="GameStage.as" index="0">
-<position info="not_deleted" x="8164" y="0"/>
-</item>
-<item historyLabel="Turret.as" index="2">
-<position info="not_deleted" x="1492" y="0"/>
-</item>
-<item historyLabel="GameStage.as" index="0">
-<position info="not_deleted" x="3635" y="0"/>
-</item>
-<item historyLabel="Ship.as" index="1">
-<position info="not_deleted" x="215" y="0"/>
-</item>
-<item historyLabel="GameStage.as" index="0">
-<position info="not_deleted" x="3749" y="0"/>
-</item>
-<item historyLabel="Ship.as" index="1">
-<position info="not_deleted" x="215" y="0"/>
-</item>
-<item historyLabel="QuestionBuilder.as" index="5">
-<position info="not_deleted" x="72" y="107"/>
-</item>
-<item historyLabel="tempProj.as" index="6">
-<position info="not_deleted" x="363" y="0"/>
-</item>
-<item historyLabel="Game.as" index="3">
-<position info="not_deleted" x="29" y="0"/>
-</item>
-<item historyLabel="GameStage.as" index="0">
-<position info="not_deleted" x="3472" y="0"/>
-</item>
-<item historyLabel="Ship.as" index="1">
-<position info="not_deleted" x="904" y="0"/>
-</item>
-<item historyLabel="QuestionBuilder.as" index="5">
-<position info="not_deleted" x="1394" y="0"/>
-</item>
-<item historyLabel="Bullet.as" index="4">
-<position info="not_deleted" x="658" y="0"/>
-</item>
-<item historyLabel="Turret.as" index="2">
-<position info="not_deleted" x="1492" y="0"/>
-</item>
-<item historyLabel="Ship.as" index="1">
-<position info="not_deleted" x="904" y="0"/>
-</item>
-<item historyLabel="GameStage.as" index="0">
-<position info="not_deleted" x="3605" y="14"/>
-</item>
-<item historyLabel="Ship.as" index="1">
-<position info="not_deleted" x="1620" y="9"/>
-</item>
-<item historyLabel="QuestionBuilder.as" index="5">
-<position info="not_deleted" x="1394" y="0"/>
-</item>
-<item historyLabel="Ship.as" index="1">
-<position info="not_deleted" x="658" y="0"/>
-</item>
-<item historyLabel="GameStage.as" index="0">
-<position info="not_deleted" x="3594" y="0"/>
-</item>
-<item historyLabel="Ship.as" index="1">
-<position info="not_deleted" x="1505" y="0"/>
-</item>
-<item historyLabel="QuestionBuilder.as" index="5">
-<position info="not_deleted" x="1301" y="0"/>
-</item>
-<item historyLabel="GameStage.as" index="0">
-<position info="not_deleted" x="3594" y="0"/>
-</item>
-<item active="true" historyLabel="Game.as" index="7">
-<position info="not_deleted" x="29" y="0"/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1fb03cb"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 <trimItem IMemento.internal.id="org.eclipse.mylyn.tasks.ui.trim.container"/>
@@ -570,49 +364,13 @@
 </window>
 <mruList>
 <file factoryID="com.adobe.flexbuilder.editors.derived.ui.startpage.StartPageEditorInput" id="com.adobe.flexbuilder.ui.StartPage" name="Web Browser" tooltip="Flash Builder Welcome Screen">
-<persistable iconpath="platform:/plugin/com.adobe.flexbuilder.ui/icons/fb_app_16.png" style="20" tooltip="Flash Builder Welcome Screen" url="file:/Applications/Adobe Flash Builder 4.6/eclipse/plugins/com.adobe.flexbuilder.ui_4.6.1.335153/welcome/index.html?firstLaunch=false&amp;edition=prem&amp;version=460"/>
+<persistable iconpath="platform:/plugin/com.adobe.flexbuilder.ui/icons/fb_app_16.png" style="20" tooltip="Flash Builder Welcome Screen" url="file:/Applications/Adobe Flash Builder 4.7/eclipse/plugins/com.adobe.flexbuilder.ui_4.7.0.349722/welcome/index.html?firstLaunch=false&amp;edition=prem&amp;version=470"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="QuestionBuilder.as" tooltip="LearningSterling/src/com/wbarra/utilityBuilder/QuestionBuilder.as">
-<persistable path="/LearningSterling/src/com/wbarra/utilityBuilder/QuestionBuilder.as"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ScreenNavigator.as" tooltip="MathDefence/src/com/wbarra/controller/ScreenNavigator.as">
+<persistable path="/MathDefence/src/com/wbarra/controller/ScreenNavigator.as"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Bullet.as" tooltip="LearningSterling/src/com/wbarra/game/objects/Bullet.as">
-<persistable path="/LearningSterling/src/com/wbarra/game/objects/Bullet.as"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Turret.as" tooltip="LearningSterling/src/com/wbarra/game/objects/Turret.as">
-<persistable path="/LearningSterling/src/com/wbarra/game/objects/Turret.as"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Ship.as" tooltip="LearningSterling/src/com/wbarra/game/objects/Ship.as">
-<persistable path="/LearningSterling/src/com/wbarra/game/objects/Ship.as"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="BulletManager.as" tooltip="LearningSterling/src/com/wbarra/managers/BulletManager.as">
-<persistable path="/LearningSterling/src/com/wbarra/managers/BulletManager.as"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="GameStage.as" tooltip="LearningSterling/src/com/wbarra/screens/GameStage.as">
-<persistable path="/LearningSterling/src/com/wbarra/screens/GameStage.as"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="AllMyImages.as" tooltip="LearningSterling/src/com/wbarra/imagesAndSound/AllMyImages.as">
-<persistable path="/LearningSterling/src/com/wbarra/imagesAndSound/AllMyImages.as"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="GameStart.as" tooltip="LearningSterling/src/com/wbarra/screens/GameStart.as">
-<persistable path="/LearningSterling/src/com/wbarra/screens/GameStart.as"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="Game.as" tooltip="LearningSterling/src/com/wbarra/controller/Game.as">
-<persistable path="/LearningSterling/src/com/wbarra/controller/Game.as"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ScreenEvent.as" tooltip="LearningSterling/src/com/wbarra/events/ScreenEvent.as">
-<persistable path="/LearningSterling/src/com/wbarra/events/ScreenEvent.as"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="ResetEvent.as" tooltip="LearningSterling/src/com/wbarra/events/ResetEvent.as">
-<persistable path="/LearningSterling/src/com/wbarra/events/ResetEvent.as"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="tempProj.as" tooltip="LearningSterling/src/tempProj.as">
-<persistable path="/LearningSterling/src/tempProj.as"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="GameOver.as" tooltip="LearningSterling/src/com/wbarra/screens/GameOver.as">
-<persistable path="/LearningSterling/src/com/wbarra/screens/GameOver.as"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="index.template.html" tooltip="LearningSterling/html-template/index.template.html">
-<persistable path="/LearningSterling/html-template/index.template.html"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor" name="main.as" tooltip="MathDefence/src/main.as">
+<persistable path="/MathDefence/src/main.as"/>
 </file>
 </mruList>
 </workbench>

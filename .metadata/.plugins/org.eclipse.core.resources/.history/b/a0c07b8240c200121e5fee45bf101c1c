@@ -1,0 +1,17 @@
+package
+{
+	import com.wbarra.Game.GameNavigator;
+	import flash.display.Sprite;
+	import starling.core.Starling;
+	
+	public class GroupGame extends Sprite
+	{
+		private var _mStarling:Starling;
+		
+		public function GroupGame()
+		{
+			
+			
+		}
+	}
+}

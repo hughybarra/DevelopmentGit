@@ -1,0 +1,15 @@
+package com.wbarra.Game
+{
+	import starling.display.Stage;
+	import starling.text.TextField;
+
+	public class GameNavigator
+	{
+		public function GameNavigator()
+		{
+			var test:Screen = new Screen();
+			Stage.addChild(test);
+			
+		}
+	}
+}

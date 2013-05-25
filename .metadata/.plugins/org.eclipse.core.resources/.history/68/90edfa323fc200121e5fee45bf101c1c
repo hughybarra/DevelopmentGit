@@ -1,0 +1,17 @@
+package com.wbarra.Game
+{
+	import starling.events.Event;
+
+	public class GameNavigator
+	{
+		public function GameNavigator()
+		{
+			trace("ran"):
+		}
+		
+		private function runNavigation():void
+		{
+			trace("ran");
+		}
+	}
+}

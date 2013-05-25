@@ -1,0 +1,14 @@
+package com.wbarra.controller
+{
+	import starling.display.Sprite;
+	import starling.events.Event;
+	
+	public class GameController extends Sprite
+	{
+		public function GameController()
+		{
+			super();
+			addEventListener(Event.ADDED_TO_STAGE, onAdded);
+		}
+	}
+}

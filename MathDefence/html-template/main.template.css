@@ -1,0 +1,119 @@
+/* Resets ================================ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	text-transform: none;
+	font-family: "Helvetica Neua", Sans-Serif, Arial;
+	color: #e3f2f1;	
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Resets ================================ */
+
+/* MAIN 		 ================================ */
+
+html {
+	background-color: #474545;
+	background-repeat: repeat;
+}
+body{
+	background-color: #242729;
+	width: 990px;
+	margin: 25px auto;
+
+}
+header{
+	background-color: #000000 ;
+	margin: 50px, auto;
+	width: 990px;
+	height: 50px;
+	text-align: center;
+	font-size: 40px;
+	font-family: "Helvetica Neue";
+	line-height: 50px;
+	color: #00baff;
+}
+
+
+.leftSide{
+	float:left;
+	margin-left: 20px;
+	width:418px;
+}
+.leftSide h2{
+	font-family: "Helvetica Neue";
+	font-size: 25px;
+	margin-top: 50px;
+	color: #00baff;
+}
+.leftSide p{
+	font-family: "helvetica Neue";
+	font-size: 15px;
+	margin-top: 10px;
+	padding-right: 10px;
+}
+#flashSection{
+	margin-right: 20px;
+	margin-left: 50px;
+	width: 522px;
+	float: left;
+	height: 778px;
+	margin: 25px auto;
+	background-color: #FFFFFF;
+}
+#test{
+	width: 512px;
+	height: 768px;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+footer{
+	font-family: "helvetica neue";
+	font-size: 40px;
+	line-height: 50px;
+	height: 50px;
+	color: #FFFFFF;
+	text-align: center;
+	clear: both;
+	width: 990px;
+	background-color: #000000;
+}
+	

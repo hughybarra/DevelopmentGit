@@ -1,0 +1,20 @@
+package
+{
+	import com.wbarra.controller.Controller;
+	
+	import flash.display.Sprite;
+	
+	import starling.core.Starling;
+	
+	public class GroupGame extends Sprite
+	{
+		private var _starling:Starling;
+		
+		public function GroupGame()
+		{
+			_starling = new Starling(Controller, stage);
+			_starling.start();
+			
+		}
+	}
+}

@@ -1,0 +1,10 @@
+package com.wbarra.Game
+{
+	public class GameNavigator
+	{
+		public function GameNavigator()
+		{
+			trace("ran");
+		}
+	}
+}

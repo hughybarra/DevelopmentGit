@@ -1,0 +1,13 @@
+package com.wbarra.Game
+{
+	import starling.text.TextField;
+
+	public class GameNavigator
+	{
+		public function GameNavigator()
+		{
+			
+			var textField:TextField = new TextField(400, 300, "Welcome to Starling!");
+		}
+	}
+}

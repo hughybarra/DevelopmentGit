@@ -1,0 +1,16 @@
+package
+{
+	import flash.display.Sprite;
+	
+	import starling.core.Starling;
+	
+	public class GroupGame extends Sprite
+	{
+		_mStarling:Starling;
+		public function GroupGame()
+		{
+			_mStarling = new Starling(GameNavigator, stage);
+			
+		}
+	}
+}

@@ -1,0 +1,24 @@
+package
+{
+	import com.wbarra.controller.Controller;
+	
+	import flash.display.Sprite;
+	import flash.display.StageAlign;
+	import flash.display.StageScaleMode;
+	
+	import starling.core.Starling;
+	
+	public class GroupGame extends Sprite
+	{
+		private var _starling:Starling;
+		
+		public function GroupGame()
+		{
+			stage.scaleMode = StageScaleMode.NO_SCALE;
+			stage.align = StageAlign.TOP_LEFT;
+			_starling = new Starling(Controller, stage);
+			_starling.start();
+			
+		}
+	}
+}
